@@ -1,2 +1,4 @@
 <?php
-echo "Bismillah lancar ta amin.";
+	require "includes/config.inc.php";
+	require "includes/func.inc.php";
+	echo "Allahuakbar";
