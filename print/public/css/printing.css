@@ -1,0 +1,24 @@
+tr:nth-child(even) {
+    background-color: #ececec;
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+@media print {
+    /* tr.striped:nth-child(even) {
+        background-color: red !important;
+    } */
+    @page {
+        /* size: 215mm 330mm; */
+        size: 210mm 297mm;
+        color: #881919 !important;
+    }
+    tr.striped:nth-child(even)>td {
+        /* background-color: #ececec !important;*/
+        background-color: white !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
