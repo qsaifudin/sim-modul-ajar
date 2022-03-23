@@ -1,176 +1,69 @@
-<p align="center"></p>
+# admin
 
-<p align="center">
-   <a href="https://themeselection.com/products/materio-free-vuetify-vuejs-admin-template" target="_blank">
-      <img src="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/blob/main/src/assets/images/logos/logo.svg" alt="materio-logo" width="60px" height="auto">
-   </a>
-</p>
+## Build Setup
 
-<h1 align="center">
-   <a href="https://themeselection.com/products/materio-free-vuetify-vuejs-admin-template" target="_blank" align="center">
-      Materio - Vuetify VueJS Free Admin Template
-   </a>
-</h1>
+```bash
+# install dependencies
+$ npm install
 
-<p align="center">Production ready carefully crafted most comprehensive admin template</p>
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-<p align="center">
-   <a href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/themeselection/materio-vuetify-vuejs-admin-template-free" alt="license">
-   </a>
-   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/themeselection/materio-vuetify-vuejs-admin-template-free/Deploy">
-   <a href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/releases">
-    <img src="https://img.shields.io/github/release/themeselection/materio-vuetify-vuejs-admin-template-free.svg" alt="GitHub release">
-  </a>
-   <a href="https://twitter.com/Theme_Selection" target="_blank">
-      <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Theme_Selection">
-   </a>
-</p>
+# build for production and launch server
+$ npm run build
+$ npm run start
 
-<kbd>[![Materio - Vuetify VueJS Free Admin Template Demo Screenshot](https://user-images.githubusercontent.com/47495003/129342383-2816d6fe-3a88-4189-b08f-f30b9abac2b0.png)](https://themeselection.com/products/materio-free-vuetify-vuejs-admin-template)</kbd>
+# generate static project
+$ npm run generate
+```
 
-## Introduction
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-If you’re a developer looking for an admin dashboard that is developer-friendly, rich with features, and highly customizable look no further than Materio. We’ve followed the highest industry standards to bring you one of the very best **[VueJS Admin Templates](https://themeselection.com/products/category/vuejs-admin-templates/)** that is not only fast and easy to use but highly scalable. Offering ultimate convenience and flexibility, you’ll be able to build whatever application you want with very little hassle.
+## Special Directories
 
-Build premium quality applications with ease. Use our innovative admin template to create eye-catching, high-quality, and high-performing single-page applications. Your apps will be completely responsive, ensuring they’ll look stunning and function flawlessly on desktops, tablets, and mobile devices.
+You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
-[View Demo](https://themeselection.com/demo/materio-vuetify-vuejs-admin-template-free/demo/)
+### `assets`
 
-## Installation ⚒️
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
 
-> We recommend you use yarn
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
-1. Install all packages
+### `components`
 
-   ```bash
-   yarn
+The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
 
-   # npm install [for npm]
-   ```
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
 
-2. Run development server
+### `layouts`
 
-   ```bash
-   yarn serve
+Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
 
-   # npm run serve [for npm]
-   ```
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
 
-3. Generate build files for deployment
 
-   ```bash
-   yarn build
+### `pages`
 
-   # npm run build [for npm]
-   ```
+This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
 
-## What's Included 📦
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
 
-- Dashboard
-- Account Settings
-- Pages
-  - Login
-  - Register
-  - Error
-- User Interface
-  - Typography
-  - Icons
-  - Basic Cards
-  - Tables
-  - Form Layouts
+### `plugins`
 
-## What's in Premium Version 💎
+The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
 
-| Materio Free Version                                                                             | Materio Premium Version                                                                        |
-| ------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
-| [Demo](https://themeselection.com/demo/materio-vuetify-vuejs-admin-template-free/demo/)          | [Demo](https://themeselection.com/demo/materio-vuetify-vuejs-admin-template/landing)           |
-| [Download](https://themeselection.com/products/materio-free-vuetify-vuejs-admin-template)        | [Purchase](https://themeselection.com/products/materio-vuetify-vuejs-admin-template)           |
-| Single vertical menu                                                                             | Vertical (+ vertical collapsed) & Horizontal menu                                              |
-| Simple Light/Dark theme                                                                          | 3 Skin variants w/ light/dark theme support: Default, Bordered & Semi-dark                     |
-| 1 Simple Dashboard                                                                               | 3 Niche Dashboards                                                                             |
-| -                                                                                                | 5 API ready applications                                                                       |
-| Simple From Elements                                                                             | Advance form elemens, validation & form wizard                                                 |
-| Basic Cards                                                                                      | Basic Cards + Advanced Cards + Statistics Cards                                                |
-| -                                                                                                | API ready JWT Authentication flow                                                              |
-| -                                                                                                | Access Control (even on CRUD operations)                                                       |
-| -                                                                                                | Quick Search - Quickly navigate between pages (w/ hotkey support)                              |
-| Basic Pages                                                                                      | Authentication Pages in 2 variants + Ready to use pages like Pricing, FAQ, Knowledge base, etc |
-| -                                                                                                | 3D Characters + Illustrations                                                                  |
-| Basic tables                                                                                     | Advanced tables                                                                                |
-| Manual customization                                                                             | Quick customization using theme config file                                                    |
-| -                                                                                                | Advanced Charts                                                                                |
-| 1 Chart Library                                                                                  | 2 Chart Libraries                                                                              |
-| -                                                                                                | Multiple Navbar & Menu Options                                                                 |
-| -                                                                                                | Starter-kit                                                                                    |
-| -                                                                                                | Internationalization support in components                                                     |
-| Regular Support                                                                                  | Priority Support                                                                               |
-| Basic Documentation                                                                              | Detailed Documentation                                                                         |
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
 
-## Documentation 📜
+### `static`
 
-Check GitHub [Wiki](https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/wiki) of this repo
+This directory contains your static files. Each file inside this directory is mapped to `/`.
 
-## Browser Support 🖥️
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
-- Materio Vuetify VueJS Free Admin Template is built to work best in the latest desktop and mobile and tablet browsers
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
 
-- Chrome (latest)
-- FireFox (latest)
-- Safari (latest)
-- Opera (latest)
+### `store`
 
-## Contributing 🦸
+This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
-Contribution are always welcome and recommended! Here is how:
-
-- Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
-- Clone to your machine `git clone https://github.com/YOUR_USERNAME/REPO_URL` Make your changes
-- Create a pull request
-
-### Contribution Requirements 🧰
-
-- When you contribute, you agree to give a non-exclusive license to ThemeSelection to use that contribution in any context as we (ThemeSelection) see appropriate.
-- If you use content provided by another party, it must be appropriately licensed using an open source license.
-- Contributions are only accepted through Github pull requests.
-- Finally, contributed code must work in all supported browsers (see above for browser support).
-
-## Creators 😇
-
-- [ThemeSelection](https://themeselection.com)
-
-## Changelog 📆
-
-Please refer to the [CHANGELOG](CHANGELOG.md) file. We will add a detailed release notes to each new release.
-
-## Credits 🙏
-
-- [Vuetify](https://vuetifyjs.com/)
-- [Material Design Icons](https://materialdesignicons.com/)
-- [ApexCharts](https://apexcharts.com/)
-- [Humans Illustrations](https://humans.wannathis.one/)
-- [Freepik](https://www.freepik.com/)
-- [Unsplash](https://unsplash.com/)
-
-## NOTE 🏷️
-
-**We request you to keep ThemeSelection credit link in the footer section.**
-
-## Looking For Premium Admin Templates ?? 👀
-
-**[ThemeSelection](https://themeselection.com/)** provides Selected high quality, modern design, professional and easy-to-use Free and Premium [Bootstrap Admin Templates](https://themeselection.com/products/category/bootstrap-admin-templates/), [VueJS Admin Templates](https://themeselection.com/products/category/vuejs-admin-templates/), [Laravel Admin Templates](https://themeselection.com/products/category/laravel-admin-templates/), HTML Themes, and [Free UI Kits](https://themeselection.com/products/category/free-ui-kits/) to create your applications faster!.
-
-If you want to [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/) like Materio then do visit [ThemeSelection](https://themeselection.com/).
-
-## Useful Links 🔗
-
-- More products from [ThemeSelection](https://themeselection.com)
-- Freebies from [ThemeSelection](https://themeselection.com/products/category/download-free-admin-templates/)
-- [Blog](https://themeselection.com/blog/)
-
-## Social Media 🌍
-
-- Twitter : [https://twitter.com/Theme_Selection](https://twitter.com/Theme_Selection)
-- Facebook : [https://www.facebook.com/ThemeSelections/](https://www.facebook.com/ThemeSelections/)
-- Pintrest : [https://pinterest.com/themeselect/](https://pinterest.com/themeselect/)
-- Instagram : [https://www.instagram.com/themeselect_official/](https://www.instagram.com/themeselect_official/)
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
