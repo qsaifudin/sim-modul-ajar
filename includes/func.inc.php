@@ -72,4 +72,3 @@ function query_delete($con, $sql, $data)
 	else
 		return "Failed Delete";	
 }
-?>

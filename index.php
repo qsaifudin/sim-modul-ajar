@@ -1,4 +1,4 @@
 <?php
-	require "includes/config.inc.php";
-	require "includes/func.inc.php";
-	echo "Allahuakbar";
+require "includes/config.inc.php";
+require "includes/func.inc.php";
+echo "Allahuakbarr";
