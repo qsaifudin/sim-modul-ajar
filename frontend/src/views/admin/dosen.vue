@@ -1,34 +1,14 @@
 <template>
   <v-row>
     <v-col cols="12">
-      <!-- <v-card>
-        <v-data-table :headers="headers" :items="usreList" item-key="full_name" class="table-rounded" disable-sort>
-          
-          <template #[`item.full_name`]="{item}">
-            <div class="d-flex flex-column">
-              <span class="d-block font-weight-semibold text--primary text-truncate">{{ item.full_name }}</span>
-              <small>{{ item.post }}</small>
-            </div>
-          </template>
-          <template #[`item.salary`]="{item}">
-            {{ `$${item.salary}` }}
-          </template>
-          
-          <template #[`item.status`]="{item}">
-            <v-chip small :color="statusColor[status[item.status]]" class="font-weight-medium">
-              {{ status[item.status] }}
-            </v-chip>
-          </template>
-        </v-data-table>
-      </v-card> -->
-
       <v-data-table
         :headers="headers"
         :items="desserts"
         sort-by="calories"
-        class="elevation-1"
+        class="elevation-1 table-rounded"
         table-rounded
         disable-sort
+        @click:row="editItem(item)"
       >
         <template v-slot:top>
           <v-toolbar flat>
@@ -45,7 +25,7 @@
 
             <v-dialog v-model="dialog" max-width="500px">
               <template v-slot:activator="{ on, attrs }">
-                <v-btn color="primary" dark v-bind="attrs" v-on="on"> New Item </v-btn>
+                <v-btn color="primary" dark v-bind="attrs" v-on="on"> Tambah Data </v-btn>
               </template>
               <v-card>
                 <v-card-title>

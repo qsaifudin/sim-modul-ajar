@@ -1,11 +1,7 @@
 <template>
-  <v-app>
-    <v-row>
-      <v-col cols="12">
-        <dashboard-datatable></dashboard-datatable>
-      </v-col>
-    </v-row>
-  </v-app>
+  <div class="">
+    <dashboard-statistics-card></dashboard-statistics-card>
+  </div>
 </template>
 
 <script>

@@ -12,9 +12,8 @@
     <div class="vertical-nav-header d-flex items-center ps-6 pe-5 pt-5 pb-2">
       <router-link to="/" class="d-flex align-center text-decoration-none">
         <v-img
-          :src="require('@/assets/images/logos/logo.svg')"
-          max-height="30px"
-          max-width="30px"
+          :src="require('@/assets/images/logos/logo-book.png')"
+          max-width="60px"
           alt="logo"
           contain
           eager
@@ -36,6 +35,8 @@
       <nav-menu-section-title title="USER INTERFACE"></nav-menu-section-title>
       <nav-menu-link title="Typography" :to="{ name: 'typography' }" :icon="icons.mdiAlphaTBoxOutline"></nav-menu-link>
     </v-list>
+
+    <app-bar-user-menu></app-bar-user-menu>
   </v-navigation-drawer>
 </template>
 

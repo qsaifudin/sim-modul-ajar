@@ -6,20 +6,26 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: () => import('@/views/home.vue'),
+    component: () => import('@/layouts/NavBar.vue'),
+    children: [
+      {
+        path: '',
+        name: 'home',
+        component: () => import('@/views/home.vue'),
+      },
+    ],
   },
   {
-    path: '/admin',
+    path: '/admin/',
     name: 'content',
     component: () => import('@/layouts/Content.vue'),
     children: [
       {
-        path: '/',
+        path: '',
         redirect: 'dashboard',
       },
       {
-        path: '/dashboard',
+        path: 'dashboard',
         name: 'dashboard',
         component: () => import('@/views/dashboard/Dashboard.vue'),
       },
