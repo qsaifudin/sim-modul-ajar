@@ -32,7 +32,6 @@
 
     <v-main>
       <div class="app-content-container boxed-container pa-6">
-        <!-- <slot></slot> -->
         <router-view></router-view>
       </div>
     </v-main>

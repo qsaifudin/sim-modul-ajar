@@ -13,7 +13,7 @@
       <router-link to="/" class="d-flex align-center text-decoration-none">
         <v-img
           :src="require('@/assets/images/logos/logo-book.png')"
-          max-width="60px"
+          max-width="40px"
           alt="logo"
           contain
           eager
@@ -27,13 +27,13 @@
 
     <!-- Navigation Items -->
     <v-list expand shaped class="vertical-nav-menu-items pr-5">
-      <nav-menu-link title="Dashboard" :to="{ name: 'dashboard' }" :icon="icons.mdiHomeOutline"></nav-menu-link>
+      <nav-menu-link title="Dashboard" to="/admin/" :icon="icons.mdiHomeOutline"></nav-menu-link>
       <nav-menu-section-title title="DATA MASTER"></nav-menu-section-title>
       <nav-menu-group title="Data Dosen" :icon="icons.mdiFileOutline">
         <nav-menu-link title="Data Dosen" to="/admin/dosen"></nav-menu-link>
       </nav-menu-group>
       <nav-menu-section-title title="USER INTERFACE"></nav-menu-section-title>
-      <nav-menu-link title="Typography" :to="{ name: 'typography' }" :icon="icons.mdiAlphaTBoxOutline"></nav-menu-link>
+      <!-- <nav-menu-link title="Typography" :to="{ name: 'typography' }" :icon="icons.mdiAlphaTBoxOutline"></nav-menu-link> -->
     </v-list>
 
     <app-bar-user-menu></app-bar-user-menu>

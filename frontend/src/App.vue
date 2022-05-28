@@ -15,21 +15,21 @@ export default {
     LayoutBlank,
     LayoutContent,
   },
-  // setup() {
-  //   const { route } = useRouter()
+  setup() {
+    const { route } = useRouter()
 
-  //   const resolveLayout = computed(() => {
-  //     // Handles initial route
-  //     if (route.value.name === null) return null
+    const resolveLayout = computed(() => {
+      // Handles initial route
+      if (route.value.name === null) return null
 
-  //     if (route.value.meta.layout === 'blank') return 'layout-blank'
+      if (route.value.meta.layout === 'blank') return 'layout-blank'
 
-  //     // return 'layout-content'
-  //   })
+      // return 'layout-content'
+    })
 
-  //   return {
-  //     resolveLayout,
-  //   }
-  // },
+    return {
+      resolveLayout,
+    }
+  },
 }
 </script>

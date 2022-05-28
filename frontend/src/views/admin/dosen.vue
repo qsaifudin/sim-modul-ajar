@@ -12,7 +12,7 @@
       >
         <template v-slot:top>
           <v-toolbar flat>
-            <v-toolbar-title>My CRUD</v-toolbar-title>
+            <v-toolbar-title>Data {{ name }}</v-toolbar-title>
             <v-divider class="mx-4" inset vertical></v-divider>
             <v-spacer></v-spacer>
             <v-text-field
@@ -75,8 +75,12 @@
           </v-toolbar>
         </template>
         <template v-slot:item.actions="{ item }">
-          <v-icon small class="mr-2" @click="editItem(item)"> {{ icons.mdiPencil }} </v-icon>
-          <v-icon small @click="deleteItem(item)"> {{ icons.mdiDelete }} </v-icon>
+          <v-btn x-small color="warning" class="mr-2" @click.stop="editItem(item)">
+            <v-icon small> {{ icons.mdiPencil }} </v-icon>
+          </v-btn>
+          <v-btn x-small color="error" class="red" @click.stop="deleteItem(item)">
+            <v-icon small> {{ icons.mdiDelete }} </v-icon>
+          </v-btn>
         </template>
         <template v-slot:no-data>
           <v-btn color="primary" @click="initialize"> Reset </v-btn>
@@ -101,6 +105,7 @@ export default {
     }
   },
   data: () => ({
+    name: 'Dosen',
     dialog: false,
     dialogDelete: false,
     headers: [
@@ -136,7 +141,7 @@ export default {
 
   computed: {
     formTitle() {
-      return this.editedIndex === -1 ? 'New Item' : 'Edit Item'
+      return this.editedIndex === -1 ? `Tambah Data ${this.name}` : `Edit Data ${this.name}`
     },
   },
 

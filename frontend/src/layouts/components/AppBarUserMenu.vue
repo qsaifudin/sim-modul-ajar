@@ -22,6 +22,19 @@
 
       <v-divider></v-divider>
 
+      <v-list-item link to="/admin">
+        <v-list-item-icon class="me-2">
+          <v-icon size="22">
+            {{ icons.mdiShieldOutline }}
+          </v-icon>
+        </v-list-item-icon>
+        <v-list-item-content>
+          <v-list-item-title>Halaman Admin</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
       <!-- Profile -->
       <v-list-item link>
         <v-list-item-icon class="me-2">
@@ -101,6 +114,7 @@ import {
   mdiCurrencyUsd,
   mdiHelpCircleOutline,
   mdiLogoutVariant,
+  mdiShieldOutline,
 } from '@mdi/js'
 
 export default {
@@ -120,6 +134,7 @@ export default {
         mdiLogoutVariant,
         mdiWeatherNight,
         mdiWeatherSunny,
+        mdiShieldOutline,
       },
     }
   },
